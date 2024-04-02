@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "daisyui": "^4.9.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "build": "tailwindcss -o staticfiles/css/styles.css --minify",
+    "dev": "tailwindcss -o staticfiles/css/styles.css --watch"
+  }
+}
