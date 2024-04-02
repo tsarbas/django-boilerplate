@@ -41,13 +41,19 @@ npm install
 python manage.py migrate
 ```
 
-6. Run css watcher
+6. Install pre-commit hooks
+
+```bash
+pre-commit install
+```
+
+7. Run css watcher
 
 ```bash
 npm run dev
 ```
 
-7. Run the server
+8. Run the server
 
 ```bash
 python manage.py runserver
