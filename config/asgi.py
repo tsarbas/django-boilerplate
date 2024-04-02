@@ -1,5 +1,5 @@
 """
-ASGI config for django_daisy_dash project.
+ASGI config for django project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

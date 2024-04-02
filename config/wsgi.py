@@ -1,5 +1,5 @@
 """
-WSGI config for django_daisy_dash project.
+WSGI config for django project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
