@@ -1,11 +1,19 @@
 {
+  "type": "module",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "daisyui": "^4.9.0",
+    "esbuild": "^0.20.2",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
   },
   "scripts": {
-    "build": "tailwindcss -o staticfiles/css/styles.css --minify",
-    "dev": "tailwindcss -o staticfiles/css/styles.css --watch"
+    "build:css": "tailwindcss -o staticfiles/dist/css/styles.css --minify",
+    "build:js": "cross-env NODE_ENV=production node ./esbuild.config.js",
+    "build": "npm-run-all -p build:*",
+    "dev:css": "tailwindcss -o staticfiles/dist/css/styles.css --watch",
+    "dev:js": "cross-env NODE_ENV=development node ./esbuild.config.js",
+    "dev": "npm-run-all -p dev:*"
   }
 }
