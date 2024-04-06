@@ -44,6 +44,7 @@ python manage.py migrate
 6. Install pre-commit hooks
 
 ```bash
+pre-commit run --all-files
 pre-commit install
 ```
 

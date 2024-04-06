@@ -14,6 +14,7 @@ psycopg2-binary = "^2.9.9"
 pytest = "^8.1.1"
 django-allauth = "^0.61.1"
 django-allauth-ui = "^0.2.2"
+djlint = "^1.34.1"
 
 
 [tool.poetry.group.dev.dependencies]
