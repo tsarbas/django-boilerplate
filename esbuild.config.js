@@ -6,7 +6,7 @@ const isProd = mode === 'production'
 
 if (isProd) {
     await esbuild.build({
-        outdir: 'staticfiles/dist/js',
+        outdir: 'staticfiles/static/js',
         entryPoints: [
             'staticfiles/src/js/app.js',
         ],
@@ -16,7 +16,7 @@ if (isProd) {
     })
 } else {
     let ctx = await esbuild.context({
-        outdir: 'staticfiles/dist/js',
+        outdir: 'staticfiles/static/js',
         entryPoints: [
             'staticfiles/src/js/app.js',
         ],
